@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1::before {
+        content: "~ ";
+      }
+      h1::after {
+        content: " !";
+      }
+      p::first-letter{
+        font-size: 50px;
+        color: brown;
+      }
+      p::first-line{
+        color: teal;
+      }
+      p::selection{
+        background-color: khaki;
+        color: blueviolet;
+      }
+      input::placeholder{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Element Selector (::)</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis
+      illo asperiores nihil tempora. Nisi voluptatem aperiam aut facilis quae
+      laboriosam quos nemo molestias voluptas eum eos odit, neque ad!
+    </p>
+    <input type="text" placeholder="Type your name">
+  </body>
+</html>

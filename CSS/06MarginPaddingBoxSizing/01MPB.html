@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+      div {
+        border: 1px solid black;
+      }
+
+      .margin {
+        margin: 100px; /* All Four Direction */
+        margin: 100px 200px; /* first = top & bottom Direction , second = right & left */
+        margin: 100px 200px 300px; /* first = top Direction , second = right & left, third = bottom */
+        margin: 100px 200px 300px 400px; /* first = top Direction , second = right, third = bottom, fourth = left */
+        background-color: teal;
+        color: khaki;
+      }
+      .padding {
+        padding: 100px;
+        padding: 100px 200px;
+        padding: 100px 200px 300px;
+        padding: 100px 200px 300px 400px;
+        color: teal;
+        background-color: khaki;
+      }
+      div[class*="box"] {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid black;
+        margin: 0 auto;
+      }
+      .content-box {
+        background-color: crimson;
+        color: aliceblue;
+        box-sizing: content-box;
+        /* Total width = 200px + (2*20px) + (2*10) => 260px */
+        /* Total height = 200px + (2*20px) + (2*10) => 260px */
+      }
+      .border-box {
+        background-color: violet;
+        color: aliceblue;
+        box-sizing: border-box;
+        /* Total width = 200px - (2*20px) - (2*10) => 140px */
+        /* Total height = 200px - (2*20px) - (2*10) => 140px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="margin">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et magni
+      suscipit repellat iusto maxime, perspiciatis quam officiis mollitia
+      explicabo ut incidunt illo quasi aliquid aliquam ipsum earum vitae dolorum
+      modi?
+    </div>
+    <hr />
+    <div class="padding">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi vel
+      eum qui recusandae quis esse ab! Veniam beatae dicta, sequi assumenda
+      praesentium necessitatibus suscipit laborum ipsa nesciunt neque
+      blanditiis.
+    </div>
+    <hr />
+    <div class="content-box">Content-box</div>
+    <hr />
+    <div class="border-box">Border-box</div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
